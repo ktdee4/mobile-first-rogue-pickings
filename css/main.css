@@ -1,0 +1,143 @@
+/***BASE STYLES***/
+html {
+	font-size: 16px;
+}
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+}
+
+#container {
+	width: 98%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+header {
+	height: auto;
+	margin-top: 20px;
+}
+
+#rogue, li, h2, #specials, #fresh {
+	color: #77a466;
+}
+
+h1, h2, h3, nav, footer {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+p {
+	line-height: 150%;
+}
+
+/***HEADER***/
+
+header {
+	font-size: 0.875em;
+}
+
+header h1 {
+	color: black;
+	font-size: 2.15em;
+	float: left;
+}
+
+header nav {
+	float: right;
+}
+
+header nav ul li {
+	display: inline-block;
+	font-size: 1em;
+	margin: 8px;
+	font-weight: 600;
+}
+
+/***MAIN-TOP***/
+
+.top-section {
+	font-size: 1em;
+}
+
+#main-image {
+	width: 100%;
+	border-top: 3px solid #77a466;
+	border-bottom: 3px solid #77a466;
+	margin: 15px 0px 8px 0px;
+	clear: both;
+}
+
+.top-section .main-title {
+	border-bottom: 1px solid #e6e6ff;
+	clear: both;
+}
+
+.top-section h2 {
+	margin-bottom: 25px;
+	font-size: 1.12em;
+}
+
+.top-section p {
+	font-size: 1em;
+}
+
+
+/*****MAIN-BOTTOM*****/
+
+.bottom-section {
+	font-size: 1em;
+}
+
+.bottom-section .third h3 {
+	font-size: 0.75em;
+}
+
+.bottom-section p {
+	font-size: 1em;
+}
+
+.bottom-section .third {
+	width: 33%;
+	height: auto;
+	float: left;
+}
+
+.bottom-section #middle {
+	border-left: 1px solid #e6e6ff;
+	border-right: 1px solid #e6e6ff;
+	margin: auto;
+}
+
+.bottom-section #left h3 {
+	padding: 10px 30px 10px 0px;
+}
+
+.bottom-section #middle h3, #right h3 {
+	padding: 10px 30px;
+}
+
+.bottom-section #middle p, #right p {
+	padding: 0px 30px;
+}
+
+.bottom-section #middle p {
+	line-height: 135%;
+}
+
+.bottom-section #specials {
+	line-height: 250%;
+}
+
+/***FOOTER***/
+
+footer {
+	font-size: 0.75em;
+	text-align: center;
+	margin: 20px 10px;
+	padding-top: 10px;
+	clear: both;
+	border-top: 1px solid 	#e6e6ff;
+}
+
+
