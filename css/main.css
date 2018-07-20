@@ -2,6 +2,7 @@
 html {
 	font-size: 16px;
 }
+
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	font-size: 1em;
@@ -35,29 +36,33 @@ p {
 
 header {
 	font-size: 0.875em;
+	text-align: center;
 }
 
 header h1 {
 	color: black;
 	font-size: 2.15em;
-	float: left;
+	border-bottom: 4px solid #77a466;
+	padding-bottom: 10px;
 }
 
-header nav {
-	float: right;
+header nav ul {
+	/*for mobile and tablet only*/
+	padding-left: 0px;
 }
 
 header nav ul li {
-	display: inline-block;
 	font-size: 1em;
-	margin: 8px;
+	margin: 20px;
 	font-weight: 600;
+	list-style: none;
 }
 
 /***MAIN-TOP***/
 
 .top-section {
 	font-size: 1em;
+	padding-left: 2px;
 }
 
 #main-image {
@@ -80,6 +85,7 @@ header nav ul li {
 
 .top-section p {
 	font-size: 1em;
+	line-height: 175%;
 }
 
 
@@ -91,34 +97,12 @@ header nav ul li {
 
 .bottom-section .third h3 {
 	font-size: 0.75em;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .bottom-section p {
 	font-size: 1em;
-}
-
-.bottom-section .third {
-	width: 33%;
-	height: auto;
-	float: left;
-}
-
-.bottom-section #middle {
-	border-left: 1px solid #e6e6ff;
-	border-right: 1px solid #e6e6ff;
-	margin: auto;
-}
-
-.bottom-section #left h3 {
-	padding: 10px 30px 10px 0px;
-}
-
-.bottom-section #middle h3, #right h3 {
-	padding: 10px 30px;
-}
-
-.bottom-section #middle p, #right p {
-	padding: 0px 30px;
 }
 
 .bottom-section #middle p {
@@ -138,6 +122,60 @@ footer {
 	padding-top: 10px;
 	clear: both;
 	border-top: 1px solid 	#e6e6ff;
+}
+
+/********TABLET MEDIA QUERY*********/
+
+@media all and (min-width: 768px) {
+
+	.bottom-section .third {
+		width: 33%;
+		height: auto;
+		float: left;
+	}
+
+	.bottom-section #middle {
+		border-left: 1px solid #e6e6ff;
+		border-right: 1px solid #e6e6ff;
+		margin: auto;
+	}
+
+	.bottom-section #left h3 {
+		padding: 10px 30px 10px 0px;
+	}
+
+	.bottom-section #middle h3, #right h3 {
+		padding: 10px 30px
+	}
+
+	.bottom-section #middle p, #right p {
+		padding: 0px 30px;
+	}
+
+}
+
+/********DESKTOP MEDIA QUERY********/
+
+@media all and (min-width: 940px) {
+
+	header h1 {
+		float: left;
+		border-bottom: 0px;
+		padding-bottom: 0px;
+	}
+
+	header nav {
+		float: right;
+	}
+
+	header nav ul li {
+		display: inline-block;
+		margin: 8px;
+	}
+
+	.top-section p {
+		line-height: 150%;
+	}
 }
 
 
